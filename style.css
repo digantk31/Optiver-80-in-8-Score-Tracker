@@ -1,0 +1,213 @@
+/* General body and font settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    padding: 20px;
+}
+
+/* Main container for the site */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #1e1e1e; /* Dark container background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #e0e0e0; /* Light text color for heading */
+}
+
+/* Form layout and styles */
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Input field styling */
+input {
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text color for inputs */
+    border: 1px solid #555; /* Darker border for inputs */
+}
+
+/* Button styling */
+button {
+    background: #28a745; /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Chart container styling */
+.chart-container {
+    margin: 20px 0;
+}
+
+/* List styles for scores */
+#score-list {
+    list-style: none;
+    padding: 0;
+}
+
+#score-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    background: #333; /* Dark background for list items */
+    color: #e0e0e0; /* Light text color for list items */
+    border-radius: 5px;
+}
+
+/* Delete and Edit button styles in the list */
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button in modal */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Dark theme chart adjustments */
+canvas {
+    background-color: #333; /* Dark background for the chart canvas */
+    border-radius: 5px;
+    border: 1px solid #555; /* Dark border */
+}
+
+/* For responsive layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Styling for the Score Tracker heading */
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0e0e0; /* Light text for the score tracker heading */
+}
+
+/* Tooltip for elements like "edit" or "delete" */
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+/* Styles for the date section */
+.date-section {
+    background: #1e1e1e; /* Dark background for the date section */
+    border: 1px solid #555; /* Dark border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Score input section */
+.score-section {
+    background: #1e1e1e; /* Dark background */
+    border: 1px solid #555; /* Dark border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* For notifications, alerts, or error messages */
+.alert {
+    background-color: #f44336; /* Red alert background */
+    color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: none;
+}
+
+/* For success messages */
+.success {
+    background-color: #4CAF50; /* Green background for success */
+    color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: none;
+}

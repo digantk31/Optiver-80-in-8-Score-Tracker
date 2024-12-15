@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Optiver 80 in 8</strong><br><span>Score Tracker</span></h1>
+        <form id="score-form">
+            <input type="date" id="score-date" required>
+            <input type="number" id="score-value" placeholder="Enter your score" required>
+            <button type="submit">Add Score</button>
+        </form>
+
+        <div class="chart-container">
+            <h2>Bar Chart</h2>
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Dotted Line Chart</h2>
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <ul id="score-list"></ul>
+    </div>
+
+    <!-- Modal for Duplicate Entry Warning -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
