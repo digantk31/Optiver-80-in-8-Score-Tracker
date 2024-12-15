@@ -14,9 +14,12 @@ if (localStorage.getItem('scores')) {
     scores = JSON.parse(localStorage.getItem('scores'));
 }
 
-// Set default date to today's date
-const today = new Date().toISOString().split('T')[0];
-scoreDateInput.value = today;
+// Set default date after DOM has fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Remove this code if you don't want any default date set
+    // const today = new Date().toISOString().split('T')[0];
+    // scoreDateInput.value = today;
+});
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -49,6 +52,7 @@ form.addEventListener('submit', function (e) {
     renderScores();
     updateCharts();
     form.reset();
+    const today = new Date().toISOString().split('T')[0];
     scoreDateInput.value = today; // Reset date to today after submission
 });
 
