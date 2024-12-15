@@ -57,4 +57,4 @@ This project is for personal use and is not licensed for commercial distribution
 
 ## Author
 
-Created by Digant Kathiriya. Feel free to reach out for any suggestions or improvements!
+Created by [Digant Kathiriya](https://github.com/digantk31). Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/digantkathiriya/) for any suggestions or improvements
