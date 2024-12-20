@@ -2,7 +2,9 @@
 
 A personal web-based application to track daily scores for Optiver 80 in 8, featuring interactive charts, easy data management, and a responsive design.
 
-[See Result](https://digantk31.github.io/Optiver-80-in-8-Score-Tracker/) 
+### See website in action in web
+
+[https://digantk31.github.io/Optiver-80-in-8-Score-Tracker/]
 
 ## Features
 
